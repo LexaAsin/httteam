@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Кадровый резерв</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function myFunction() {
+            document.getElementById("menu_content").classList.toggle("show");
+        }
+        
+
+        window.onclick = function(e) {
+          if (!e.target.matches('.menubtn')) {
+            var myDropdown = document.getElementById("menu_content");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
+          }
+        }
+        </script>
+</head>
+<body>
+
+    <div class="header">
+        <div class="menu">
+            <button class="menubtn" onclick="myFunction()">Меню <i class="fa fa-caret-down"></i></button>
+            <div class="menu_content" id="menu_content">
+                    <a href="#">Вакансии</a>
+                    <a href="#">Кандидаты</a>
+                    <a href="#">Сотрудники</a>
+                    <a href="#">Кадровый резерв</a>
+                    <a href="#">Мероприятия</a>
+                    <a href="#">Обучение</a>
+            </div>
+            
+        </div>
+        <i class="fa fa-arrow-right-from-bracket"></i>
+    </div>
+
+    <div class="reservs">
+        <h1>Кадровый резерв</h1>
+        <div class="reservs_inside">
+            <div class="reserv">
+                <h1>Иванов Иван Иванович</h1>
+                <h2>Системный администратор</h2>
+                <div class="resume"><i class="fa fa-file-text"></i>
+                    <h3>Резюме</h3></div>
+
+                <button>Удалить из резерва</button>
+                <button>Пригласить на собеседование</button>
+            </div>
+
+            <div class="reserv">
+                <h1>Иванов Иван Иванович</h1>
+                <h2>Системный администратор</h2>
+                <div class="resume"><i class="fa fa-file-text"></i>
+                    <h3>Резюме</h3></div>
+
+                <button>Удалить из резерва</button>
+                <button>Пригласить на собеседование</button>
+            </div>
+
+            <div class="reserv">
+                <h1>Иванов Иван Иванович</h1>
+                <h2>Системный администратор</h2>
+                <div class="resume"><i class="fa fa-file-text"></i>
+                    <h3>Резюме</h3></div>
+
+                <button>Удалить из резерва</button>
+                <button>Пригласить на собеседование</button>
+            </div>
+
+            <div class="reserv">
+                <h1>Иванов Иван Иванович</h1>
+                <h2>Системный администратор</h2>
+                <div class="resume"><i class="fa fa-file-text"></i>
+                    <h3>Резюме</h3></div>
+
+                <button>Удалить из резерва</button>
+                <button>Пригласить на собеседование</button>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>
