@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Вакансии</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function myFunction() {
+            document.getElementById("menu_content").classList.toggle("show");
+        }
+        
+
+        window.onclick = function(e) {
+          if (!e.target.matches('.menubtn')) {
+            var myDropdown = document.getElementById("menu_content");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
+          }
+        }
+        </script>
+</head>
+<body>
+
+    <div class="header">
+        <div class="menu">
+            <button class="menubtn" onclick="myFunction()">Меню <i class="fa fa-caret-down"></i></button>
+            <div class="menu_content" id="menu_content">
+                    <a href="#">Вакансии</a>
+                    <a href="candidats.html">Кандидаты</a>
+                    <a href="sotrydniki.html">Сотрудники</a>
+                    <a href="reserv.html">Кадровый резерв</a>
+                    <a href="meropriatia.html">Мероприятия</a>
+                    <a href="#">Обучение</a>
+            </div>
+            
+        </div>
+        <i class="fa fa-arrow-right-from-bracket"></i>
+    </div>
+
+    <div class="content">
+        <div class="create_vac">
+            <h1>Разместить вакансию</h1>
+            <div class="create_vac_inside">
+                <form>
+                    <label for="name">Название вакансии</label> <br>
+                    <input name="name" id="name"> <br>
+                    <label for="description">Описание вакансии</label> <br>
+                    <input name="description" id="description"> <br>
+
+                    <button>Опубликовать</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="list_vac">
+            <h1>Список вакансий</h1>
+            <div class="list_vac_inside">
+                <div class="vac_name">
+                    <h2>Название вакансии</h2>
+                    <h3>Вакансия 1</h3>
+                    <h3>Вакансия 2</h3>
+                    <h3>Вакансия 3</h3>
+                </div>
+                <div class="vac_answers">
+                    <h2>Отклики</h2>
+                    <h3>13</h3>
+                    <h3>6</h3>
+                    <h3>45</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="answers">
+        <h1>Отклики</h1>
+        <div class="answers_inside">
+            <div class="answer">
+                <p>hh.ru</p>
+                <h1>Иванов Иван Иванович</h1>
+                <h2>Системный администратор</h2>
+                <div class="resume"><i class="fa fa-file-text"></i>
+                    <h3>Резюме</h3></div>
+
+                <button>Отправить приглашение</button>
+                <button>Отказать</button>
+            </div>
+
+            <div class="answer">
+                <p>hh.ru</p>
+                <h1>Иванов Иван Иванович</h1>
+                <h2>Системный администратор</h2>
+                <div class="resume"><i class="fa fa-file-text"></i>
+                    <h3>Резюме</h3></div>
+
+                <button>Отправить приглашение</button>
+                <button>Отказать</button>
+            </div>
+
+            <div class="answer">
+                <p>hh.ru</p>
+                <h1>Иванов Иван Иванович</h1>
+                <h2>Системный администратор</h2>
+                <div class="resume"><i class="fa fa-file-text"></i>
+                    <h3>Резюме</h3></div>
+
+                <button>Отправить приглашение</button>
+                <button>Отказать</button>
+            </div>
+
+            <div class="answer">
+                <p>hh.ru</p>
+                <h1>Иванов Иван Иванович</h1>
+                <h2>Системный администратор</h2>
+                <div class="resume"><i class="fa fa-file-text"></i>
+                <h3>Резюме</h3></div>
+
+                <button>Отправить приглашение</button>
+                <button>Отказать</button>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
